@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const script = document.createElement("script")
+                script.setAttribute("src", "main.js")
+                document.head.appendChild(script)
+            })
+        </script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div id="my-id" class="container"><div>Hello world</div></div>
+        <button id="myButton">Log a cat</button>
+    </body>
+    <!-- <style>
+        .container > div {
+            color: rosybrown;
+        }
+
+        /* Don't do this */
+        /* div {
+            color: lightcoral;
+        } */
+        /* #my-id {
+            color: blueviolet;
+        } */
+    </style> -->
+</html>
