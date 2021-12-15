@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="A1">
+            <div id="B1">
+                <div id="C1"></div>
+            </div>
+            <div id="B2">
+                <div id="C2">
+                    <div id="D1"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        window.A1 = document.getElementById("A1")
+        window.A2 = document.getElementById("A2")
+        window.B1 = document.getElementById("B1")
+        window.B2 = document.getElementById("B2")
+        window.C1 = document.getElementById("C1")
+        window.C2 = document.getElementById("C2")
+        window.D1 = document.getElementById("D1")
+        window.D2 = document.getElementById("D2")
+
+        window.isDescendent = (parent, child) => {
+            while (child.parentNode) {
+                if (child.parentNode == parent) {
+                    return true
+                } else {
+                    child = child.parentNode
+                }
+                console.log(child)
+            }
+
+            console.log(child.parentNode)
+
+            return false
+        }
+    </script>
+</html>
